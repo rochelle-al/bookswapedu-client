@@ -1,0 +1,164 @@
+.App{
+    height:100vh;
+    padding: 0px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.books {
+    display: flex;
+    flex-direction: column; /* Change the flex direction to column */
+    gap: 10px;
+}
+
+.book {
+    /* Remove flex: 1; to ensure each book takes up its entire row */
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    /* Optionally, you can set a max-width for each book */
+    max-width: 300px; /* Adjust the value according to your design */
+}
+
+
+img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    background-color: rgb(186, 184, 184);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+input{
+    width: 250px;
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+.formButton{
+    border: none;
+    padding: 10px;
+    background-color: rgb(62, 89, 244);
+    color: white;
+    width: 275px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.addnewbook{
+    border: border;
+    padding: 8px 10px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    margin: 50px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.search-bar {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    right: 0;
+    background-color: #d6d5d5; 
+    z-index: 1000; 
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2); 
+}
+
+
+h1 {
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+
+.download-link {
+    text-decoration: none; 
+    color: #fff; 
+}
+
+th {
+    background-color: #f2f2f2; /* Header background color */
+    padding: 10px;
+    text-align: left; /* Align header text to the left */
+    font-weight: bold; /* Make the header text bold */
+}
+
+
+/* Styles for circular buttons with icons */
+.circle-button {
+    width: 40px; /* Set the width and height for the circular button */
+    height: 40px;
+    border-radius: 50%; /* Make the button circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: rgb(243, 48, 48); /* Button background color */
+    color: white; /* Button text color */
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon styles */
+.circle-button::before {
+    content: ''; /* Add empty content for the pseudo-element */
+    font-family: 'FontAwesome'; /* Use FontAwesome for icons (or your preferred icon library) */
+    font-size: 20px; /* Set the icon size */
+}
+
+.custom-font {
+    font-family: 'Raleway', sans-serif; /* Apply the custom font */
+}
+
+/* Books.css */
+
+/* Common styles for .download, .delete, and .update buttons */
+/* Books.css */
+
+/* Common styles for .download, .delete, and .update buttons */
+.download,
+.delete,
+.update {
+    border: none; /* Remove border */
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    display: inline-block; /* Add display property to inline-block */
+    padding: 6px 12px; /* Adjust padding to control button size */
+    font-size: 14px; /* Adjust font size */
+    margin-bottom: 8px; /* Add margin to create a gap and make them stack */
+    width: 70%; /* Make buttons fill the width of the container */
+}
+
+/* Styles for .download button */
+.download {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+/* Styles for .delete button */
+.delete {
+    background-color: rgb(244, 96, 96);
+    border: 1px solid rgb(255, 47, 5);
+}
+
+/* Styles for .update button */
+.update {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.table-title {
+    font-weight: underline;
+}
+
